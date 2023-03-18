@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+:root {
+  --color-primary: #ffffff;
+
+  --color-secondary-100: #C2CBE5;
+  --color-secondary-200: #5A668A;
+
+  --color-accent-100: #B2FFE1;
+  --color-accent-200: #54E6AF;
+
+  --color-alert: #fa3e3d;
+
+  --color-bg-100: #2C344B;
+  --color-bg-200: #121725;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--color-primary);
+  background-color: var(--color-bg-200);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
