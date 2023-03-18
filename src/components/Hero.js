@@ -1,4 +1,6 @@
 import './Hero.css';
+import Partners from './Partners';
+import HeroForm from './HeroForm';
 
 const Hero = () => {
   return (
@@ -12,6 +14,8 @@ const Hero = () => {
         podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
         more!
       </p>
+      <Partners />
+      <HeroForm />
     </div>
   );
 };

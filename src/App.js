@@ -9,8 +9,6 @@ function App() {
       <main>
         <Hero />
       </main>
-
-      <button>Request access</button>
     </div>
   );
 }
