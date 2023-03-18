@@ -40,3 +40,7 @@ h1 {
   font-weight: 100;
   text-transform: uppercase;
 }
+
+ul {
+  list-style: none;
+}

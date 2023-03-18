@@ -1,0 +1,10 @@
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.partners__item {}
+
+.partners__image {}
