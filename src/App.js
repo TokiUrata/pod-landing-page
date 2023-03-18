@@ -1,8 +1,10 @@
+import MainHeader from './components/MainHeader';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <MainHeader />
       <h1>Publish your podcasts everywhere.</h1>
       <p>
         Upload your audio to Pod with a single click. We’ll then distribute your
