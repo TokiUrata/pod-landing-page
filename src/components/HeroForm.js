@@ -14,7 +14,9 @@ const HeroForm = () => {
           type="text"
           placeholder="Email address"
         />
-        <Button type="submit">Request Access</Button>
+        <Button className="button button--form" type="submit">
+          Request Access
+        </Button>
       </form>
     </>
   );
