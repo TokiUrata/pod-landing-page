@@ -5,7 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <div className="app-container">
+      <div className="app__overlay"></div>
+      <div className="app__container">
         <MainHeader />
         <main>
           <Hero />
