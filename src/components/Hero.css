@@ -5,6 +5,7 @@
 
 .hero__title {
   color: var(--color-accent-200);
+  margin-bottom: 1rem;
 }
 
 .hero__title--strong {
@@ -13,4 +14,7 @@
 
 }
 
-.hero__subtitle {}
+.hero__subtitle {
+  font-size: 0.9375rem;
+  margin-bottom: 2rem;
+}

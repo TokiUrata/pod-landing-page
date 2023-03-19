@@ -32,15 +32,21 @@ html {
 
 body {
   font-size: 1.125rem;
-  line-height: 1.75rem;
   font-weight: 100;
+  line-height: 1.75rem;
 }
 
 h1 {
+  font-size: 1.625rem;
   font-weight: 100;
+  line-height: 2.375rem;
   text-transform: uppercase;
 }
 
 ul {
   list-style: none;
+}
+
+p {
+  line-height: 1.5625rem;
 }

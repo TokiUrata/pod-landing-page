@@ -8,24 +8,32 @@ const Partners = () => {
   return (
     <ul className="partners">
       <li className="partners__item">
-        <img className="partners__image" src={spotify} alt="Spotify" />
+        <img
+          className="partners__image partners__image--spotify"
+          src={spotify}
+          alt="Spotify"
+        />
       </li>
       <li className="partners__item">
         <img
-          className="partners__image"
+          className="partners__image partners__image--apple"
           src={applePodcast}
           alt="Apple Podcast"
         />
       </li>
       <li className="partners__item">
         <img
-          className="partners__image"
+          className="partners__image partners__image--google"
           src={googlePodcasts}
           alt="Google Podcasts"
         />
       </li>
       <li className="partners__item">
-        <img className="partners__image" src={pocketCasts} alt="Pocket Casts" />
+        <img
+          className="partners__image partners__image--pocket"
+          src={pocketCasts}
+          alt="Pocket Casts"
+        />
       </li>
     </ul>
   );

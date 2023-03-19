@@ -1,0 +1,10 @@
+.app {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 20.4375rem;
+}
