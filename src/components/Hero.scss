@@ -5,19 +5,19 @@
 .hero {
   text-align: center;
   width: 100%;
-}
 
-.hero__title {
-  color: $color-accent-200;
-  margin-bottom: 1rem;
-}
+  &__title {
+    color: $color-accent-200;
+    margin-bottom: 1rem;
 
-.hero__title--strong {
-  font-weight: 100;
-  color: $color-primary-100;
-}
+    &--strong {
+      font-weight: 100;
+      color: $color-primary-100;
+    }
+  }
 
-.hero__subtitle {
-  font-size: 0.9375rem;
-  margin-bottom: 2rem;
+  &__subtitle {
+    font-size: 0.9375rem;
+    margin-bottom: 2rem;
+  }
 }

@@ -4,26 +4,29 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 3rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    height: 1rem;
+    opacity: 0.7;
+
+    &--spotify {
+    }
+
+    &--apple {
+    }
+
+    &--google {
+      height: auto;
+      width: 5rem;
+    }
+
+    &--pocket {
+    }
+  }
 }
-
-.partners__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.partners__image {
-  height: 1rem;
-  opacity: 0.7;
-}
-
-.partners__image--spotify {}
-
-.partners__image--apple {}
-
-.partners__image--google {
-  height: auto;
-  width: 5rem;
-}
-
-.partners__image--pocket {}

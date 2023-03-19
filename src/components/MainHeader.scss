@@ -4,10 +4,11 @@
   justify-content: center;
   width: 100%;
   height: 10.9375rem;
-}
 
-.main-header__link {}
+  &__link {
+  }
 
-.main-header__logo {
-  height: 3.5rem;
+  &__logo {
+    height: 3.5rem;
+  }
 }

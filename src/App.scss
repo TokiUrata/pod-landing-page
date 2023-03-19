@@ -12,17 +12,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-}
 
-.app__overlay {
-  background-color: $color-primary-500;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-}
+  &__overlay {
+    background-color: $color-primary-500;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+  }
 
-.app__container {
-  max-width: 20.4375rem;
-  z-index: 100;
+  &__container {
+    max-width: 20.4375rem;
+    z-index: 100;
+  }
 }
