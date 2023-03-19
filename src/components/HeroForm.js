@@ -14,18 +14,16 @@ const HeroForm = () => {
     event.preventDefault();
 
     if (enteredEmail.trim().length === 0) {
-      console.log('Oops! Please add your email');
       setErrorMessage('Oops! Please add your email');
       return;
     } else if (!isEmail(enteredEmail.trim())) {
-      console.log('Oops! Please check your email');
       setErrorMessage('Oops! Please check your email');
       return;
     }
 
     console.log(enteredEmail);
-    setErrorMessage(false);
     setEnteredEmail('');
+    setErrorMessage('');
   };
 
   const emailChangeHandler = (event) => {
