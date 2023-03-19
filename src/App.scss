@@ -12,13 +12,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  max-width: 1680px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablet {
-    padding: 0 2.4375rem;
+    padding: 0;
+
     justify-content: flex-start;
     background-image: url(../src/assets/tablet/image-host.jpg);
     background-size: inherit;
     background-position: top right;
+  }
+
+  @include desktop {
+    background-image: url(../src/assets/desktop/image-host.jpg);
+    background-position: top 8.125rem right;
   }
 
   &__overlay {
@@ -39,6 +49,15 @@
 
     @include tablet {
       max-width: 100%;
+      padding-left: 2.4375rem;
     }
+
+    @include desktop {
+      padding-left: 10.3125rem;
+    }
+  }
+
+  &__main {
+    // position: absolute;
   }
 }

@@ -3,13 +3,26 @@
 .pattern {
   display: none;
   background-image: url(../assets/desktop/bg-pattern-dots.svg);
-  background-size: initial;
   background-repeat: no-repeat;
-  width: 100%;
   height: 6.5rem;
-  background-position: bottom left;
 
-  @include tablet {
-    display: block;
+  &--tablet {
+    @include tablet {
+      display: block;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @include desktop {
+      display: block;
+      width: 100%;
+      position: absolute;
+      margin-left: calc(100% - 232px);
+      margin-top: 719px;
+    }
   }
 }

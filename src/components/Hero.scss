@@ -15,6 +15,11 @@
     margin-bottom: 9.5625rem;
   }
 
+  @include desktop {
+    padding-top: 88px;
+    width: 45.1875rem;
+  }
+
   &__title {
     color: $color-accent-200;
     margin-bottom: 1rem;
@@ -25,7 +30,11 @@
     }
 
     @include tablet {
-      margin-bottom: 31px;
+      margin-bottom: 1.9375rem;
+    }
+
+    @include desktop {
+      margin-bottom: 1.5rem;
     }
   }
 

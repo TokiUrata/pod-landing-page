@@ -1,7 +1,7 @@
 import './Pattern.scss';
 
-const Pattern = () => {
-  return <div className="pattern"></div>;
+const Pattern = (props) => {
+  return <div className={props.className || 'pattern'}></div>;
 };
 
 export default Pattern;

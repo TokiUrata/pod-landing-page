@@ -9,11 +9,12 @@ function App() {
       <div className="app__overlay"></div>
       <div className="app__container">
         <MainHeader />
-        <main>
+        <main className="app__main">
           <Hero />
         </main>
-        <Pattern />
+        <Pattern className="pattern pattern--tablet" />
       </div>
+      <Pattern className="pattern pattern--desktop" />
     </div>
   );
 }

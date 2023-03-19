@@ -34,6 +34,11 @@ h1 {
     font-size: 3rem;
     line-height: 3.5rem;
   }
+
+  @include desktop {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
 }
 
 ul {
