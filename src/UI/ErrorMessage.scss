@@ -1,0 +1,22 @@
+@use '../styles/partials/colors' as *;
+@use '../styles/partials/mixins' as *;
+
+.error-message {
+  color: $color-alert;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  text-indent: 2rem;
+  position: absolute;
+  top: -22px;
+  display: none;
+
+  @include tablet {
+    top: 64px;
+  }
+
+  &--active {
+    display: block;
+  }
+}
