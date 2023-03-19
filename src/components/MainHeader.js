@@ -1,5 +1,5 @@
 import logo from '../assets/desktop/logo.svg';
-import './MainHeader.css';
+import './MainHeader.scss';
 
 const MainHeader = () => {
   return (

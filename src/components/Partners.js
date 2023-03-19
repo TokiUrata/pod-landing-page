@@ -2,7 +2,7 @@ import spotify from '../assets/desktop/spotify.svg';
 import applePodcast from '../assets/desktop/apple-podcast.svg';
 import googlePodcasts from '../assets/desktop/google-podcasts.svg';
 import pocketCasts from '../assets/desktop/pocket-casts.svg';
-import './Partners.css';
+import './Partners.scss';
 
 const Partners = () => {
   return (

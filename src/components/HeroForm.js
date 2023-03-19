@@ -1,5 +1,5 @@
 import Buttton from '../UI/Buttton';
-import './HeroForm.css';
+import './HeroForm.scss';
 
 const HeroForm = () => {
   const addEmailHandler = (event) => {

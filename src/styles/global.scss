@@ -1,0 +1,40 @@
+@use './partials/colors' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+}
+
+html {
+  box-sizing: border-box;
+  color: $color-primary-200;
+  background-color: $color-primary-500;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.75rem;
+}
+
+h1 {
+  font-size: 1.625rem;
+  font-weight: 100;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.5625rem;
+}
