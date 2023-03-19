@@ -1,4 +1,4 @@
-import Buttton from '../UI/Buttton';
+import Button from '../UI/Button';
 import './HeroForm.scss';
 
 const HeroForm = () => {
@@ -14,7 +14,7 @@ const HeroForm = () => {
           type="text"
           placeholder="Email address"
         />
-        <Buttton type="submit">Request Access</Buttton>
+        <Button type="submit">Request Access</Button>
       </form>
     </>
   );

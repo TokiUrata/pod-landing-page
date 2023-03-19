@@ -1,5 +1,6 @@
 import MainHeader from './components/MainHeader';
 import Hero from './components/Hero';
+import Pattern from './UI/Pattern';
 import './App.scss';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <main>
           <Hero />
         </main>
+        <Pattern />
       </div>
     </div>
   );

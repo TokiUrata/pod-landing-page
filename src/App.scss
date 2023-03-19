@@ -13,16 +13,32 @@
   background-size: cover;
   height: 100vh;
 
+  @include tablet {
+    padding: 0 2.4375rem;
+    justify-content: flex-start;
+    background-image: url(../src/assets/tablet/image-host.jpg);
+    background-size: inherit;
+    background-position: top right;
+  }
+
   &__overlay {
     background-color: $color-primary-500;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.9;
+
+    @include tablet {
+      opacity: 0;
+    }
   }
 
   &__container {
     max-width: 20.4375rem;
     z-index: 100;
+
+    @include tablet {
+      max-width: 100%;
+    }
   }
 }

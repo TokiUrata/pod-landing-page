@@ -1,6 +1,6 @@
 import './Button.scss';
 
-const Buttton = (props) => {
+const Button = (props) => {
   return (
     <button className="button" type={props.type || 'button'}>
       {props.children}
@@ -8,4 +8,4 @@ const Buttton = (props) => {
   );
 };
 
-export default Buttton;
+export default Button;

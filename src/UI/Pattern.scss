@@ -1,0 +1,15 @@
+@use '../styles/partials/mixins' as *;
+
+.pattern {
+  display: none;
+  background-image: url(../assets/desktop/bg-pattern-dots.svg);
+  background-size: initial;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 6.5rem;
+  background-position: bottom left;
+
+  @include tablet {
+    display: block;
+  }
+}

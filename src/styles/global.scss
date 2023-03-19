@@ -29,6 +29,11 @@ h1 {
   font-weight: 100;
   line-height: 2.375rem;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
 }
 
 ul {
@@ -36,7 +41,6 @@ ul {
 }
 
 p {
-  line-height: 1.5625rem;
 }
 
 ::-webkit-input-placeholder {

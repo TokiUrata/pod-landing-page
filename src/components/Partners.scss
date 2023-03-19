@@ -1,9 +1,18 @@
+@use '../styles/partials/colors' as *;
+@use '../styles/partials/mixins' as *;
+
 .partners {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 3rem;
+
+  @include tablet {
+    order: 1;
+    width: 33.5rem;
+    margin-bottom: 0;
+  }
 
   &__item {
     display: flex;
@@ -12,21 +21,38 @@
   }
 
   &__image {
-    height: 1rem;
     opacity: 0.7;
 
     &--spotify {
+      height: 1.0625rem;
+
+      @include tablet {
+        height: 1.8125rem;
+      }
     }
 
     &--apple {
+      height: 1.0625rem;
+
+      @include tablet {
+        height: 1.8125rem;
+      }
     }
 
     &--google {
-      height: auto;
-      width: 5rem;
+      height: 0.6875rem;
+
+      @include tablet {
+        height: 1.125rem;
+      }
     }
 
     &--pocket {
+      height: 0.9375rem;
+
+      @include tablet {
+        height: 1.625rem;
+      }
     }
   }
 }

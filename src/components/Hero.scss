@@ -4,7 +4,16 @@
 
 .hero {
   text-align: center;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    text-align: left;
+    background-color: $color-primary-500;
+    width: 39.6875rem;
+    padding-top: 5.8125rem;
+    margin-bottom: 9.5625rem;
+  }
 
   &__title {
     color: $color-accent-200;
@@ -14,10 +23,22 @@
       font-weight: 100;
       color: $color-primary-100;
     }
+
+    @include tablet {
+      margin-bottom: 31px;
+    }
   }
 
   &__subtitle {
     font-size: 0.9375rem;
+    line-height: 1.5625rem;
     margin-bottom: 2rem;
+
+    @include tablet {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      max-width: 27.8125rem;
+      margin-bottom: 2.5rem;
+    }
   }
 }
