@@ -34,6 +34,12 @@ const HeroForm = () => {
     }
   };
 
+  const blurHandler = (event) => {
+    if (enteredEmail.trim().length === 0) {
+      setErrorMessage('');
+    }
+  };
+
   return (
     <>
       <form className="hero-form" onSubmit={addEmailHandler}>
@@ -42,6 +48,7 @@ const HeroForm = () => {
           type="text"
           placeholder="Email address"
           onChange={emailChangeHandler}
+          onBlur={blurHandler}
           value={enteredEmail}
         />
         <Button className="button button--form" type="submit">
