@@ -24,4 +24,13 @@
     background-color: $color-accent-100;
     transition: background-color 0.3s;
   }
+
+  &--modal {
+    width: 10.125rem;
+    align-self: center;
+
+    @include tablet {
+      align-self: flex-end;
+    }
+  }
 }

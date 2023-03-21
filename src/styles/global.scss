@@ -41,6 +41,23 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1.625rem;
+  font-weight: 100;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+  }
+
+  @include desktop {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+  }
+}
+
 ul {
   list-style: none;
 }

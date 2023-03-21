@@ -1,11 +1,13 @@
-import Button from '../UI/Button';
 import { useState } from 'react';
 import ErrorMessage from './ErrorMessage';
+import Modal from '../UI/Modal';
+import Button from '../UI/Button';
 import './HeroForm.scss';
 
 const HeroForm = () => {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(false);
 
   const isEmail = (email) =>
     /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
@@ -21,7 +23,9 @@ const HeroForm = () => {
       return;
     }
 
+    setIsValidEmail(true);
     console.log(enteredEmail);
+
     setEnteredEmail('');
     setErrorMessage('');
   };
@@ -40,8 +44,19 @@ const HeroForm = () => {
     }
   };
 
+  const closeModalHandler = () => {
+    setIsValidEmail(false);
+  };
+
   return (
     <>
+      {isValidEmail && (
+        <Modal
+          title="Success!"
+          subtitle="Access granted. Check your email for more details."
+          onClick={closeModalHandler}
+        />
+      )}
       <form className="hero-form" onSubmit={addEmailHandler}>
         <input
           className="hero-form__input"
@@ -51,7 +66,11 @@ const HeroForm = () => {
           onBlur={blurHandler}
           value={enteredEmail}
         />
-        <Button className="button button--form" type="submit">
+        <Button
+          className="button button--form"
+          type="submit"
+          onClick={closeModalHandler}
+        >
           Request Access
         </Button>
         {errorMessage && <ErrorMessage message={errorMessage} />}
