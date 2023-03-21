@@ -1,6 +1,6 @@
 import Button from '../UI/Button';
 import { useState } from 'react';
-import ErrorMessage from '../UI/ErrorMessage';
+import ErrorMessage from './ErrorMessage';
 import './HeroForm.scss';
 
 const HeroForm = () => {
