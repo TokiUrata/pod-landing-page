@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ErrorMessage from './ErrorMessage';
 import Modal from '../UI/Modal';
 import Button from '../UI/Button';
@@ -8,6 +8,18 @@ const HeroForm = () => {
   const [enteredEmail, setEnteredEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(false);
+  const [validEmails, setValidEmails] = useState([]);
+
+  useEffect(() => {
+    const emails = JSON.parse(localStorage.getItem('emails'));
+    if (emails) {
+      setValidEmails(emails);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('emails', JSON.stringify(validEmails));
+  }, [validEmails]);
 
   const isEmail = (email) =>
     /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
@@ -21,10 +33,13 @@ const HeroForm = () => {
     } else if (!isEmail(enteredEmail.trim())) {
       setErrorMessage('Oops! Please check your email');
       return;
+    } else if (validEmails.includes(enteredEmail)) {
+      setErrorMessage('This email already has granted access');
+      return;
     }
 
     setIsValidEmail(true);
-    console.log(enteredEmail);
+    setValidEmails([...validEmails, enteredEmail]);
 
     setEnteredEmail('');
     setErrorMessage('');
@@ -32,10 +47,6 @@ const HeroForm = () => {
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
-
-    if (enteredEmail.trim().length === 0) {
-      setErrorMessage('');
-    }
   };
 
   const blurHandler = (event) => {
