@@ -1,4 +1,4 @@
-import logo from '../assets/desktop/logo.svg';
+import logo from '../assets/images/logos/logo.svg';
 import './MainHeader.scss';
 
 const MainHeader = () => {

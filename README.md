@@ -17,7 +17,7 @@ Pod is a landing page for a fictional podcast publisher that is currently in its
 
 ### Screenshot
 
-![Pod - Podcast Publisher](/src/assets/screenshot.png)
+![Pod - Podcast Publisher](/src/assets/images/screenshots/screenshot.png)
 
 ### Link
 

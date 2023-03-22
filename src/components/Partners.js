@@ -34,7 +34,7 @@ const Partners = () => {
         <li key={item.id} className="partners__item">
           <img
             className={`partners__image partners__image--${item.class}`}
-            src={require(`../assets/desktop/${item.logo}`)}
+            src={require(`../assets/images/logos/${item.logo}`)}
             alt={item.title}
           />
         </li>
