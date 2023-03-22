@@ -11,7 +11,7 @@ Pod is a landing page for a fictional podcast publisher that is currently in its
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgment](#acknowledgment)
 
 ## Overview
 
