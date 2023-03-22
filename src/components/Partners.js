@@ -1,40 +1,44 @@
-import spotify from '../assets/desktop/spotify.svg';
-import applePodcast from '../assets/desktop/apple-podcast.svg';
-import googlePodcasts from '../assets/desktop/google-podcasts.svg';
-import pocketCasts from '../assets/desktop/pocket-casts.svg';
 import './Partners.scss';
+
+const PARTNERS_DATA = [
+  {
+    id: 'pa-01',
+    title: 'Spotify',
+    logo: 'spotify.svg',
+    class: 'spotify',
+  },
+  {
+    id: 'pa-02',
+    title: 'Apple Podcast',
+    logo: 'apple-podcast.svg',
+    class: 'apple',
+  },
+  {
+    id: 'pa-03',
+    title: 'Google Podcasts',
+    logo: 'google-podcasts.svg',
+    class: 'google',
+  },
+  {
+    id: 'pa-04',
+    title: 'Pocket Casts',
+    logo: 'pocket-casts.svg',
+    class: 'pocket',
+  },
+];
 
 const Partners = () => {
   return (
     <ul className="partners">
-      <li className="partners__item">
-        <img
-          className="partners__image partners__image--spotify"
-          src={spotify}
-          alt="Spotify"
-        />
-      </li>
-      <li className="partners__item">
-        <img
-          className="partners__image partners__image--apple"
-          src={applePodcast}
-          alt="Apple Podcast"
-        />
-      </li>
-      <li className="partners__item">
-        <img
-          className="partners__image partners__image--google"
-          src={googlePodcasts}
-          alt="Google Podcasts"
-        />
-      </li>
-      <li className="partners__item">
-        <img
-          className="partners__image partners__image--pocket"
-          src={pocketCasts}
-          alt="Pocket Casts"
-        />
-      </li>
+      {PARTNERS_DATA.map((item) => (
+        <li key={item.id} className="partners__item">
+          <img
+            className={`partners__image partners__image--${item.class}`}
+            src={require(`../assets/desktop/${item.logo}`)}
+            alt={item.title}
+          />
+        </li>
+      ))}
     </ul>
   );
 };

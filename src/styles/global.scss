@@ -62,40 +62,27 @@ ul {
   list-style: none;
 }
 
-p {
+/* WebKit, Blink, Edge */
+*::-webkit-input-placeholder {
+  @include placeholder-styles;
 }
-
-::-webkit-input-placeholder {
-  color: $color-primary-100;
-  opacity: 0.5;
+*:-moz-placeholder {
+  /* FF 4-18 */
+  @include placeholder-styles;
 }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: $color-primary-100;
-  opacity: 0.5;
+*::-moz-placeholder {
+  /* FF 19+ */
+  @include placeholder-styles;
 }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: $color-primary-100;
-  opacity: 0.5;
-}
-
-:-ms-input-placeholder {
+*:-ms-input-placeholder {
   /* IE 10+ */
-  color: $color-primary-100;
-  opacity: 0.5;
+  @include placeholder-styles;
 }
-
-::-ms-input-placeholder {
-  /* Edge */
-  color: $color-primary-100;
-  opacity: 0.5;
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  @include placeholder-styles;
 }
-
-:placeholder-shown {
-  /* Standard */
-  color: $color-primary-100;
-  opacity: 0.5;
+*::placeholder {
+  /* modern browser */
+  @include placeholder-styles;
 }
