@@ -1,6 +1,6 @@
 # Pod - Podcast Publisher
 
-Pod is a fully responsive SPA early access landing page for a fictitious podcast publisher that includes custom form validation. Design and assets provided by Frontend Mentor.
+Pod is a landing page for a fictional podcast publisher that is currently in its early access phase. This fully responsive single-page application (SPA) also features custom form validation to enhance user experience.
 
 ## Table of contents
 
