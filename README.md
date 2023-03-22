@@ -21,7 +21,7 @@ Pod is a landing page for a fictional podcast publisher that is currently in its
 
 ### Link
 
-- Live Site URL: (https://toki-pod.netlify.app)
+- Live Site URL: [toki-pod.netlify.app](https://toki-pod.netlify.app)
 
 ### Functionality
 
@@ -63,8 +63,8 @@ I used the logo.svg file to create the favicon.
 
 Toki Urata - Frontend Developer based in Canada
 
-- Email - [tokiurata@outlook.com](mailto:tokiurata@outlook.com)
+- Email: [tokiurata@outlook.com](mailto:tokiurata@outlook.com)
 
-## Acknowledgments
+## Acknowledgment
 
 This project is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges provide opportunities to improve coding skills by building realistic projects.
