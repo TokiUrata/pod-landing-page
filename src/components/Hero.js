@@ -1,6 +1,6 @@
-import './Hero.scss';
 import Partners from './Partners';
 import HeroForm from './HeroForm';
+import './Hero.scss';
 
 const Hero = () => {
   return (

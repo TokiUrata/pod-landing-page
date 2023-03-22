@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import ErrorMessage from './ErrorMessage';
 import Modal from '../UI/Modal';
 import Button from '../UI/Button';
+import ErrorMessage from './ErrorMessage';
 import './HeroForm.scss';
 
 const HeroForm = () => {
@@ -50,7 +50,7 @@ const HeroForm = () => {
   };
 
   const blurHandler = (event) => {
-    if (enteredEmail.trim().length === 0) {
+    if (event.target.value.trim().length === 0) {
       setErrorMessage('');
     }
   };
