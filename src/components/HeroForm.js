@@ -73,6 +73,7 @@ const HeroForm = () => {
           className="hero-form__input"
           type="text"
           placeholder="Email address"
+          aria-label="Email address"
           onChange={emailChangeHandler}
           onBlur={blurHandler}
           value={enteredEmail}
