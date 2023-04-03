@@ -4,9 +4,12 @@ import Button from '../UI/Button';
 import ErrorMessage from './ErrorMessage';
 import './HeroForm.scss';
 
+const isEmail = (email) =>
+  /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+
 const HeroForm = () => {
-  const [enteredEmail, setEnteredEmail] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [validEmails, setValidEmails] = useState([]);
 
@@ -20,9 +23,6 @@ const HeroForm = () => {
   useEffect(() => {
     localStorage.setItem('emails', JSON.stringify(validEmails));
   }, [validEmails]);
-
-  const isEmail = (email) =>
-    /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
 
   const addEmailHandler = (event) => {
     event.preventDefault();
@@ -74,6 +74,7 @@ const HeroForm = () => {
           type="text"
           placeholder="Email address"
           aria-label="Email address"
+          name="email-address"
           onChange={emailChangeHandler}
           onBlur={blurHandler}
           value={enteredEmail}
