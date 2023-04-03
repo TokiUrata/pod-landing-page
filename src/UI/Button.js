@@ -6,6 +6,7 @@ const Button = (props) => {
       className={props.className || 'button'}
       type={props.type || 'button'}
       onClick={props.onClick}
+      name={props.name}
     >
       {props.children}
     </button>

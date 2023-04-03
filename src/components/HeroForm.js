@@ -68,13 +68,13 @@ const HeroForm = () => {
           onClick={closeModalHandler}
         />
       )}
-      <form className="hero-form" onSubmit={addEmailHandler}>
+      <form className="hero-form" onSubmit={addEmailHandler} name="email">
         <input
           className="hero-form__input"
           type="text"
           placeholder="Email address"
           aria-label="Email address"
-          name="email-address"
+          name="email"
           onChange={emailChangeHandler}
           onBlur={blurHandler}
           value={enteredEmail}
@@ -83,6 +83,7 @@ const HeroForm = () => {
           className="button button--form"
           type="submit"
           onClick={closeModalHandler}
+          name="request"
         >
           Request Access
         </Button>
