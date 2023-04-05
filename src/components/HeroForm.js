@@ -14,14 +14,14 @@ const HeroForm = () => {
   const [validEmails, setValidEmails] = useState([]);
 
   useEffect(() => {
-    const emails = JSON.parse(localStorage.getItem('emails'));
+    const emails = JSON.parse(sessionStorage.getItem('emails'));
     if (emails) {
       setValidEmails(emails);
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('emails', JSON.stringify(validEmails));
+    sessionStorage.setItem('emails', JSON.stringify(validEmails));
   }, [validEmails]);
 
   const addEmailHandler = (event) => {
