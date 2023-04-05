@@ -1,31 +1,5 @@
 import './Partners.scss';
-
-const PARTNERS_DATA = [
-  {
-    id: 'pa-01',
-    title: 'Spotify',
-    logo: 'spotify.svg',
-    class: 'spotify',
-  },
-  {
-    id: 'pa-02',
-    title: 'Apple Podcast',
-    logo: 'apple-podcast.svg',
-    class: 'apple',
-  },
-  {
-    id: 'pa-03',
-    title: 'Google Podcasts',
-    logo: 'google-podcasts.svg',
-    class: 'google',
-  },
-  {
-    id: 'pa-04',
-    title: 'Pocket Casts',
-    logo: 'pocket-casts.svg',
-    class: 'pocket',
-  },
-];
+import PARTNERS_DATA from '../data/partners-data.json';
 
 const Partners = () => {
   return (
