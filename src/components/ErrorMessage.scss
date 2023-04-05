@@ -10,13 +10,13 @@
   position: absolute;
   top: -1.375rem;
   color: $color-alert;
-  display: none;
+  visibility: hidden;
 
   @include tablet {
     top: 4rem;
   }
 
   &--active {
-    display: block;
+    visibility: visible;
   }
 }
