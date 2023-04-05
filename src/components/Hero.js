@@ -4,7 +4,7 @@ import './Hero.scss';
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero" role="banner">
       <h1 className="hero__title">
         Publish your podcasts{' '}
         <strong className="hero__title--strong">everywhere.</strong>
@@ -16,7 +16,7 @@ const Hero = () => {
       </p>
       <Partners />
       <HeroForm />
-    </div>
+    </section>
   );
 };
 

@@ -8,9 +8,18 @@ const Modal = (props) => {
     <>
       {ReactDOM.createPortal(
         <Backdrop onClick={props.onClick}>
-          <div className={props.className || 'modal'}>
-            <h2 className="modal__title">{props.title}</h2>
-            <p className="modal__subtitle">{props.subtitle}</p>
+          <div
+            className={props.className || 'modal'}
+            role="dialog"
+            aria-labelledby="dialogTitle"
+            aria-describedby="dialogDescription"
+          >
+            <h2 id="dialogTitle" className="modal__title">
+              {props.title}
+            </h2>
+            <p id="dialogDescription" className="modal__subtitle">
+              {props.subtitle}
+            </p>
             <Button className="button button--modal" onClick={props.onClick}>
               Close
             </Button>
