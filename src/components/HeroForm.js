@@ -75,7 +75,6 @@ const HeroForm = () => {
           placeholder="Email address"
           aria-label="email address"
           aria-invalid={errorMessage ? 'true' : 'false'}
-          aria-describedby="email-error"
           name="email"
           onChange={emailChangeHandler}
           onBlur={blurHandler}
