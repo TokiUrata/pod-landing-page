@@ -20,7 +20,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-accent-100;
     transition: background-color 0.3s;
   }
