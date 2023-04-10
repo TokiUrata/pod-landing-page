@@ -10,23 +10,17 @@
   @include tablet {
     height: auto;
     justify-content: flex-start;
+    padding-top: 3.125rem;
     margin-bottom: 9rem;
   }
 
   @include desktop {
+    padding-top: 6.375rem;
     margin-bottom: 5.9375rem;
   }
 
   &__logo {
     height: 3.5rem;
     width: auto;
-
-    @include tablet {
-      margin-top: 3.125rem;
-    }
-
-    @include desktop {
-      margin-top: 6.375rem;
-    }
   }
 }
