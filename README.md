@@ -39,7 +39,6 @@ Users should be able to:
 
 - React
 - CSS3
-- Flexbox
 - Sass SCSS
 - BEM methodology
 - Semantic HTML5 markup
