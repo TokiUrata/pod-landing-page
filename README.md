@@ -37,13 +37,13 @@ Users should be able to:
 
 ### Built with
 
+- React
 - CSS3
 - Flexbox
 - Sass SCSS
 - BEM methodology
 - Semantic HTML5 markup
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 
 ### Useful resources
 
