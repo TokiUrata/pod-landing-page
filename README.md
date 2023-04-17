@@ -42,9 +42,16 @@ Users should be able to:
 - Sass SCSS
 - BEM methodology
 - Semantic HTML5 markup
+- WAI-ARIA attributes
 - Mobile-first workflow
 
 ### Useful resources
+
+#### Accessibility
+
+- [Accessibility Checker](https://www.accessibilitychecker.org/)
+- [WAVE Web accessibility evaluation tool](https://wave.webaim.org/)
+- [Accessibility - React](https://legacy.reactjs.org/docs/accessibility.html)
 
 #### Email validation
 
