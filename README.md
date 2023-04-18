@@ -1,6 +1,6 @@
 # Pod - Podcast Publisher
 
-Pod is a landing page for a fictional podcast publisher that is currently in its early access phase. This fully responsive single-page application (SPA) also features custom form validation to enhance user experience.
+Pod is a landing page for a fictional podcast publisher that is currently in its early access phase. The project is a mobile-first, responsive web application built with React, CSS3, and Sass SCSS. It includes WAI-ARIA attributes for accessibility and features optimal layout for different screen sizes. Interactive elements have hover states for enhanced user experience. The project also includes error message handling for form submissions and visualizes a success modal message upon valid email submission. It adheres to semantic HTML5 markup and follows the BEM methodology for CSS.
 
 ## Table of contents
 
