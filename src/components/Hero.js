@@ -4,8 +4,8 @@ import './Hero.scss';
 
 const Hero = () => {
   return (
-    <section className="hero" aria-labelledby="hero-title">
-      <h1 className="hero__title" id="hero-title">
+    <section className="hero" role="banner">
+      <h1 className="hero__title">
         Publish your podcasts{' '}
         <strong className="hero__title--strong">everywhere.</strong>
       </h1>
@@ -15,7 +15,7 @@ const Hero = () => {
         more!
       </p>
       <Partners />
-      <HeroForm aria-label="Pod request access submission form" />
+      <HeroForm />
     </section>
   );
 };
