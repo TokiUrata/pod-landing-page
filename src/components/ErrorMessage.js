@@ -6,6 +6,8 @@ const ErrorMessage = (props) => {
       className={props.className || 'error-message error-message--active'}
       role="alert"
       aria-live="assertive"
+      aria-describedby="error-description"
+      aria-label={`Error: ${props.message}`}
     >
       {props.message}
     </span>

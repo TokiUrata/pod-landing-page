@@ -7,7 +7,7 @@ import './HeroForm.scss';
 const isEmail = (email) =>
   /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
 
-const HeroForm = () => {
+const HeroForm = (props) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(false);
@@ -68,10 +68,16 @@ const HeroForm = () => {
           onClick={closeModalHandler}
         />
       )}
-      <form className="hero-form" onSubmit={addEmailHandler} name="email">
+      <form
+        className="hero-form"
+        onSubmit={addEmailHandler}
+        name="email"
+        role="region"
+        aria-label={props['aria-label']}
+      >
         <input
           className="hero-form__input"
-          type="text"
+          type="email"
           placeholder="Email address"
           aria-label="email address"
           aria-invalid={errorMessage ? 'true' : 'false'}

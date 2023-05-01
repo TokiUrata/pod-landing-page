@@ -11,16 +11,21 @@ const Modal = (props) => {
           <div
             className={props.className || 'modal'}
             role="dialog"
-            aria-labelledby="dialogTitle"
-            aria-describedby="dialogDescription"
+            aria-modal="true"
+            aria-labelledby="dialog-title"
+            aria-describedby="dialog-description"
           >
-            <h2 id="dialogTitle" className="modal__title">
+            <h2 id="dialog-title" className="modal__title">
               {props.title}
             </h2>
-            <p id="dialogDescription" className="modal__subtitle">
+            <p id="dialog-description" className="modal__subtitle">
               {props.subtitle}
             </p>
-            <Button className="button button--modal" onClick={props.onClick}>
+            <Button
+              className="button button--modal"
+              type="button"
+              onClick={props.onClick}
+            >
               Close
             </Button>
           </div>

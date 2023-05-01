@@ -10,6 +10,7 @@ const Partners = () => {
             className={`partners__image partners__image--${item.class}`}
             src={require(`../assets/images/logos/${item.logo}`)}
             alt={item.title}
+            aria-label={item.title}
           />
         </li>
       ))}
