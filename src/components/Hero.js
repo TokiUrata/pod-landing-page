@@ -4,7 +4,7 @@ import './Hero.scss';
 
 const Hero = () => {
   return (
-    <section className="hero" role="banner">
+    <section className="hero" role="main">
       <h1 className="hero__title">
         Publish your podcasts{' '}
         <strong className="hero__title--strong">everywhere.</strong>
