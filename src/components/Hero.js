@@ -15,7 +15,7 @@ const Hero = () => {
         more!
       </p>
       <Partners />
-      <HeroForm />
+      <HeroForm aria-label="Request access to Pod" />
     </section>
   );
 };
