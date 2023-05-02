@@ -9,7 +9,7 @@ test('Should have a Main Header', () => {
 
 test('Should have a Hero', () => {
   render(<App />);
-  const hero = screen.getByRole('main', { name: '' });
+  const hero = screen.getByRole('main', { name: 'hero' });
   expect(hero).toBeInTheDocument();
 });
 
