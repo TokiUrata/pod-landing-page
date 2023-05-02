@@ -12,3 +12,28 @@ test('Should have a Hero', () => {
   const hero = screen.getByRole('main', { name: '' });
   expect(hero).toBeInTheDocument();
 });
+
+test('Should have two Patterns', () => {
+  render(<App />);
+  const patterns = screen.getAllByTestId('pattern');
+  expect(patterns.length).toBe(2);
+});
+
+test('Should not have two visible patterns at the same time', () => {
+  render(<App />);
+  const patterns = screen.getAllByTestId('pattern');
+  let patternWithDisplayBlock;
+  let patternWithDisplayNone;
+
+  for (const pattern of patterns) {
+    const styles = window.getComputedStyle(pattern);
+    const display = styles.getPropertyValue('display');
+    if (display === 'block') {
+      patternWithDisplayBlock = pattern;
+    } else {
+      patternWithDisplayNone = pattern;
+    }
+  }
+  expect(patternWithDisplayBlock).toBeDefined();
+  expect(patternWithDisplayNone).toBeUndefined();
+});
