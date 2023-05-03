@@ -1,28 +1,28 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('Should have a Main Header', () => {
+test('should have a Main Header', () => {
   render(<App />);
   const mainHeader = screen.getByRole('banner');
 
   expect(mainHeader).toBeInTheDocument();
 });
 
-test('Should have a Hero', () => {
+test('should have a Hero', () => {
   render(<App />);
   const hero = screen.getByRole('main', { name: 'hero' });
 
   expect(hero).toBeInTheDocument();
 });
 
-test('Should have two Patterns', () => {
+test('should have two Patterns', () => {
   render(<App />);
   const patterns = screen.getAllByTestId('pattern');
 
   expect(patterns.length).toBe(2);
 });
 
-test('Should not have two visible patterns at the same time', () => {
+test('should not have two visible patterns at the same time', () => {
   render(<App />);
   const patterns = screen.getAllByTestId('pattern');
   let patternWithDisplayBlock;

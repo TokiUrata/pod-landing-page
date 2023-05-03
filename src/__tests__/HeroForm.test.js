@@ -2,7 +2,7 @@ import { render, screen, fireEvent, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HeroForm from '../components/HeroForm';
 
-test('Renders a form with email input and submit button', () => {
+test('renders a form with email input and submit button', () => {
   render(<HeroForm />);
   const emailInput = screen.getByPlaceholderText(/Email Address/i);
   const submitButton = screen.getByRole('button', { name: /Request Access/i });
@@ -11,7 +11,7 @@ test('Renders a form with email input and submit button', () => {
   expect(submitButton).toBeInTheDocument();
 });
 
-test('Displays an error message for empty email input', () => {
+test('displays an error message for empty email input', () => {
   render(<HeroForm />);
   const submitButton = screen.getByRole('button', { name: /Request Access/i });
 
@@ -21,7 +21,7 @@ test('Displays an error message for empty email input', () => {
   expect(errorMessage).toBeInTheDocument();
 });
 
-test('Displays an error message for invalid email input', () => {
+test('displays an error message for invalid email input', () => {
   render(<HeroForm />);
   const emailInput = screen.getByPlaceholderText(/Email Address/i);
   const submitButton = screen.getByRole('button', { name: /Request Access/i });
