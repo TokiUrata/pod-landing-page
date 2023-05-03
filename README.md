@@ -1,6 +1,6 @@
 # Pod - Podcast Publisher
 
-Pod is a landing page for a fictional podcast publisher that is currently in its early access phase. The project is a mobile-first, responsive web application built with React, CSS3, and Sass SCSS. It includes WAI-ARIA attributes for accessibility and features optimal layout for different screen sizes. Interactive elements have hover states for enhanced user experience. The project also includes error message handling for form submissions and visualizes a success modal message upon valid email submission. It adheres to semantic HTML5 markup and follows the BEM methodology for CSS.
+Pod is a landing page for a fictional podcast publisher that is currently in its early access phase. The project is a mobile-first, responsive web application built with React, CSS3, and Sass SCSS, and was tested using the React Testing Library(RTL) with Jest. It includes WAI-ARIA attributes for accessibility and features optimal layout for different screen sizes. Interactive elements have hover states for enhanced user experience. The project also includes error message handling for form submissions and visualizes a success modal message upon valid email submission. It adheres to semantic HTML5 markup and follows the BEM methodology for CSS.
 
 ## Table of contents
 
@@ -44,6 +44,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - WAI-ARIA attributes
 - Mobile-first workflow
+- React Testing Library
+- Jest
 
 ### Useful resources
 
@@ -67,7 +69,7 @@ I used the logo.svg file to create the favicon.
 
 ## Author
 
-Toki Urata - Frontend Developer based in Canada
+Toki Urata - Web Developer based in Canada
 
 - Email: [tokiurata@outlook.com](mailto:tokiurata@outlook.com)
 
