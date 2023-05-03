@@ -17,6 +17,7 @@ test('Displays an error message for empty email input', () => {
 
   fireEvent.click(submitButton);
   const errorMessage = screen.getByText(/Please add your email/i);
+
   expect(errorMessage).toBeInTheDocument();
 });
 
@@ -32,5 +33,6 @@ test('Displays an error message for invalid email input', () => {
 
   fireEvent.click(submitButton);
   const errorMessage = screen.getByText(/Please check your email/i);
+
   expect(errorMessage).toBeInTheDocument();
 });
